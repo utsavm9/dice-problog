@@ -1,0 +1,31 @@
+fun path_length_equal_1() {
+	let path11to12 = flip 0.100000 in
+	let path11to21 = flip 0.100000 in
+	let path11to22 = false in
+	let path12to21 = false in
+	let path12to22 = flip 0.100000 in
+	let path21to22 = false in
+	(path11to12, (path11to21, (path11to22, (path12to21, (path12to22, path21to22)))))
+}
+
+fun path_length_less_equal_2() {
+	let len1Paths = path_length_equal_1() in
+	
+	let path11to12len1 = fst len1Paths in
+	let path11to21len1 = fst snd len1Paths in
+	let path11to22len1 = fst snd snd len1Paths in
+	let path12to21len1 = fst snd snd snd len1Paths in
+	let path12to22len1 = fst snd snd snd snd len1Paths in
+	let path21to22len1 = snd snd snd snd snd len1Paths in
+	
+	let path11to12len2 = path11to12len1 || (path11to21len1 && path12to21len1) || (path11to22len1 && path12to22len1) in
+	let path11to21len2 = path11to21len1 || (path11to12len1 && path12to21len1) || (path11to22len1 && path21to22len1) in
+	let path11to22len2 = path11to22len1 || (path11to12len1 && path12to22len1) || (path11to21len1 && path21to22len1) in
+	let path12to21len2 = path12to21len1 || (path11to12len1 && path11to21len1) || (path12to22len1 && path21to22len1) in
+	let path12to22len2 = path12to22len1 || (path11to12len1 && path11to22len1) || (path12to21len1 && path21to22len1) in
+	let path21to22len2 = path21to22len1 || (path11to21len1 && path11to22len1) || (path12to21len1 && path12to22len1) in
+	
+	(path11to12len2, (path11to21len2, (path11to22len2, (path12to21len2, (path12to22len2, path21to22len2)))))
+}
+
+path_length_less_equal_2()

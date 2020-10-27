@@ -1,0 +1,121 @@
+fun path_length_equal_1() {
+	let path11to12 = flip 0.100000 in
+	let path11to13 = false in
+	let path11to21 = flip 0.100000 in
+	let path11to22 = false in
+	let path11to23 = false in
+	let path11to31 = false in
+	let path11to32 = false in
+	let path11to33 = false in
+	let path12to13 = false in
+	let path12to21 = false in
+	let path12to22 = flip 0.100000 in
+	let path12to23 = false in
+	let path12to31 = false in
+	let path12to32 = false in
+	let path12to33 = false in
+	let path13to21 = false in
+	let path13to22 = false in
+	let path13to23 = false in
+	let path13to31 = false in
+	let path13to32 = false in
+	let path13to33 = false in
+	let path21to22 = false in
+	let path21to23 = false in
+	let path21to31 = false in
+	let path21to32 = false in
+	let path21to33 = false in
+	let path22to23 = false in
+	let path22to31 = false in
+	let path22to32 = false in
+	let path22to33 = false in
+	let path23to31 = false in
+	let path23to32 = false in
+	let path23to33 = false in
+	let path31to32 = false in
+	let path31to33 = false in
+	let path32to33 = false in
+	(path11to12, (path11to13, (path11to21, (path11to22, (path11to23, (path11to31, (path11to32, (path11to33, (path12to13, (path12to21, (path12to22, (path12to23, (path12to31, (path12to32, (path12to33, (path13to21, (path13to22, (path13to23, (path13to31, (path13to32, (path13to33, (path21to22, (path21to23, (path21to31, (path21to32, (path21to33, (path22to23, (path22to31, (path22to32, (path22to33, (path23to31, (path23to32, (path23to33, (path31to32, (path31to33, path32to33)))))))))))))))))))))))))))))))))))
+}
+
+fun path_length_less_equal_2() {
+	let len1Paths = path_length_equal_1() in
+	
+	let path11to12len1 = fst len1Paths in
+	let path11to13len1 = fst snd len1Paths in
+	let path11to21len1 = fst snd snd len1Paths in
+	let path11to22len1 = fst snd snd snd len1Paths in
+	let path11to23len1 = fst snd snd snd snd len1Paths in
+	let path11to31len1 = fst snd snd snd snd snd len1Paths in
+	let path11to32len1 = fst snd snd snd snd snd snd len1Paths in
+	let path11to33len1 = fst snd snd snd snd snd snd snd len1Paths in
+	let path12to13len1 = fst snd snd snd snd snd snd snd snd len1Paths in
+	let path12to21len1 = fst snd snd snd snd snd snd snd snd snd len1Paths in
+	let path12to22len1 = fst snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path12to23len1 = fst snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path12to31len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path12to32len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path12to33len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path13to21len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path13to22len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path13to23len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path13to31len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path13to32len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path13to33len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path21to22len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path21to23len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path21to31len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path21to32len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path21to33len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path22to23len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path22to31len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path22to32len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path22to33len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path23to31len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path23to32len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path23to33len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path31to32len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path31to33len1 = fst snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	let path32to33len1 = snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd snd len1Paths in
+	
+	let path11to12len2 = path11to12len1 || (path11to13len1 && path12to13len1) || (path11to21len1 && path12to21len1) || (path11to22len1 && path12to22len1) || (path11to23len1 && path12to23len1) || (path11to31len1 && path12to31len1) || (path11to32len1 && path12to32len1) || (path11to33len1 && path12to33len1) in
+	let path11to13len2 = path11to13len1 || (path11to12len1 && path12to13len1) || (path11to21len1 && path13to21len1) || (path11to22len1 && path13to22len1) || (path11to23len1 && path13to23len1) || (path11to31len1 && path13to31len1) || (path11to32len1 && path13to32len1) || (path11to33len1 && path13to33len1) in
+	let path11to21len2 = path11to21len1 || (path11to12len1 && path12to21len1) || (path11to13len1 && path13to21len1) || (path11to22len1 && path21to22len1) || (path11to23len1 && path21to23len1) || (path11to31len1 && path21to31len1) || (path11to32len1 && path21to32len1) || (path11to33len1 && path21to33len1) in
+	let path11to22len2 = path11to22len1 || (path11to12len1 && path12to22len1) || (path11to13len1 && path13to22len1) || (path11to21len1 && path21to22len1) || (path11to23len1 && path22to23len1) || (path11to31len1 && path22to31len1) || (path11to32len1 && path22to32len1) || (path11to33len1 && path22to33len1) in
+	let path11to23len2 = path11to23len1 || (path11to12len1 && path12to23len1) || (path11to13len1 && path13to23len1) || (path11to21len1 && path21to23len1) || (path11to22len1 && path22to23len1) || (path11to31len1 && path23to31len1) || (path11to32len1 && path23to32len1) || (path11to33len1 && path23to33len1) in
+	let path11to31len2 = path11to31len1 || (path11to12len1 && path12to31len1) || (path11to13len1 && path13to31len1) || (path11to21len1 && path21to31len1) || (path11to22len1 && path22to31len1) || (path11to23len1 && path23to31len1) || (path11to32len1 && path31to32len1) || (path11to33len1 && path31to33len1) in
+	let path11to32len2 = path11to32len1 || (path11to12len1 && path12to32len1) || (path11to13len1 && path13to32len1) || (path11to21len1 && path21to32len1) || (path11to22len1 && path22to32len1) || (path11to23len1 && path23to32len1) || (path11to31len1 && path31to32len1) || (path11to33len1 && path32to33len1) in
+	let path11to33len2 = path11to33len1 || (path11to12len1 && path12to33len1) || (path11to13len1 && path13to33len1) || (path11to21len1 && path21to33len1) || (path11to22len1 && path22to33len1) || (path11to23len1 && path23to33len1) || (path11to31len1 && path31to33len1) || (path11to32len1 && path32to33len1) in
+	let path12to13len2 = path12to13len1 || (path11to12len1 && path11to13len1) || (path12to21len1 && path13to21len1) || (path12to22len1 && path13to22len1) || (path12to23len1 && path13to23len1) || (path12to31len1 && path13to31len1) || (path12to32len1 && path13to32len1) || (path12to33len1 && path13to33len1) in
+	let path12to21len2 = path12to21len1 || (path11to12len1 && path11to21len1) || (path12to13len1 && path13to21len1) || (path12to22len1 && path21to22len1) || (path12to23len1 && path21to23len1) || (path12to31len1 && path21to31len1) || (path12to32len1 && path21to32len1) || (path12to33len1 && path21to33len1) in
+	let path12to22len2 = path12to22len1 || (path11to12len1 && path11to22len1) || (path12to13len1 && path13to22len1) || (path12to21len1 && path21to22len1) || (path12to23len1 && path22to23len1) || (path12to31len1 && path22to31len1) || (path12to32len1 && path22to32len1) || (path12to33len1 && path22to33len1) in
+	let path12to23len2 = path12to23len1 || (path11to12len1 && path11to23len1) || (path12to13len1 && path13to23len1) || (path12to21len1 && path21to23len1) || (path12to22len1 && path22to23len1) || (path12to31len1 && path23to31len1) || (path12to32len1 && path23to32len1) || (path12to33len1 && path23to33len1) in
+	let path12to31len2 = path12to31len1 || (path11to12len1 && path11to31len1) || (path12to13len1 && path13to31len1) || (path12to21len1 && path21to31len1) || (path12to22len1 && path22to31len1) || (path12to23len1 && path23to31len1) || (path12to32len1 && path31to32len1) || (path12to33len1 && path31to33len1) in
+	let path12to32len2 = path12to32len1 || (path11to12len1 && path11to32len1) || (path12to13len1 && path13to32len1) || (path12to21len1 && path21to32len1) || (path12to22len1 && path22to32len1) || (path12to23len1 && path23to32len1) || (path12to31len1 && path31to32len1) || (path12to33len1 && path32to33len1) in
+	let path12to33len2 = path12to33len1 || (path11to12len1 && path11to33len1) || (path12to13len1 && path13to33len1) || (path12to21len1 && path21to33len1) || (path12to22len1 && path22to33len1) || (path12to23len1 && path23to33len1) || (path12to31len1 && path31to33len1) || (path12to32len1 && path32to33len1) in
+	let path13to21len2 = path13to21len1 || (path11to13len1 && path11to21len1) || (path12to13len1 && path12to21len1) || (path13to22len1 && path21to22len1) || (path13to23len1 && path21to23len1) || (path13to31len1 && path21to31len1) || (path13to32len1 && path21to32len1) || (path13to33len1 && path21to33len1) in
+	let path13to22len2 = path13to22len1 || (path11to13len1 && path11to22len1) || (path12to13len1 && path12to22len1) || (path13to21len1 && path21to22len1) || (path13to23len1 && path22to23len1) || (path13to31len1 && path22to31len1) || (path13to32len1 && path22to32len1) || (path13to33len1 && path22to33len1) in
+	let path13to23len2 = path13to23len1 || (path11to13len1 && path11to23len1) || (path12to13len1 && path12to23len1) || (path13to21len1 && path21to23len1) || (path13to22len1 && path22to23len1) || (path13to31len1 && path23to31len1) || (path13to32len1 && path23to32len1) || (path13to33len1 && path23to33len1) in
+	let path13to31len2 = path13to31len1 || (path11to13len1 && path11to31len1) || (path12to13len1 && path12to31len1) || (path13to21len1 && path21to31len1) || (path13to22len1 && path22to31len1) || (path13to23len1 && path23to31len1) || (path13to32len1 && path31to32len1) || (path13to33len1 && path31to33len1) in
+	let path13to32len2 = path13to32len1 || (path11to13len1 && path11to32len1) || (path12to13len1 && path12to32len1) || (path13to21len1 && path21to32len1) || (path13to22len1 && path22to32len1) || (path13to23len1 && path23to32len1) || (path13to31len1 && path31to32len1) || (path13to33len1 && path32to33len1) in
+	let path13to33len2 = path13to33len1 || (path11to13len1 && path11to33len1) || (path12to13len1 && path12to33len1) || (path13to21len1 && path21to33len1) || (path13to22len1 && path22to33len1) || (path13to23len1 && path23to33len1) || (path13to31len1 && path31to33len1) || (path13to32len1 && path32to33len1) in
+	let path21to22len2 = path21to22len1 || (path11to21len1 && path11to22len1) || (path12to21len1 && path12to22len1) || (path13to21len1 && path13to22len1) || (path21to23len1 && path22to23len1) || (path21to31len1 && path22to31len1) || (path21to32len1 && path22to32len1) || (path21to33len1 && path22to33len1) in
+	let path21to23len2 = path21to23len1 || (path11to21len1 && path11to23len1) || (path12to21len1 && path12to23len1) || (path13to21len1 && path13to23len1) || (path21to22len1 && path22to23len1) || (path21to31len1 && path23to31len1) || (path21to32len1 && path23to32len1) || (path21to33len1 && path23to33len1) in
+	let path21to31len2 = path21to31len1 || (path11to21len1 && path11to31len1) || (path12to21len1 && path12to31len1) || (path13to21len1 && path13to31len1) || (path21to22len1 && path22to31len1) || (path21to23len1 && path23to31len1) || (path21to32len1 && path31to32len1) || (path21to33len1 && path31to33len1) in
+	let path21to32len2 = path21to32len1 || (path11to21len1 && path11to32len1) || (path12to21len1 && path12to32len1) || (path13to21len1 && path13to32len1) || (path21to22len1 && path22to32len1) || (path21to23len1 && path23to32len1) || (path21to31len1 && path31to32len1) || (path21to33len1 && path32to33len1) in
+	let path21to33len2 = path21to33len1 || (path11to21len1 && path11to33len1) || (path12to21len1 && path12to33len1) || (path13to21len1 && path13to33len1) || (path21to22len1 && path22to33len1) || (path21to23len1 && path23to33len1) || (path21to31len1 && path31to33len1) || (path21to32len1 && path32to33len1) in
+	let path22to23len2 = path22to23len1 || (path11to22len1 && path11to23len1) || (path12to22len1 && path12to23len1) || (path13to22len1 && path13to23len1) || (path21to22len1 && path21to23len1) || (path22to31len1 && path23to31len1) || (path22to32len1 && path23to32len1) || (path22to33len1 && path23to33len1) in
+	let path22to31len2 = path22to31len1 || (path11to22len1 && path11to31len1) || (path12to22len1 && path12to31len1) || (path13to22len1 && path13to31len1) || (path21to22len1 && path21to31len1) || (path22to23len1 && path23to31len1) || (path22to32len1 && path31to32len1) || (path22to33len1 && path31to33len1) in
+	let path22to32len2 = path22to32len1 || (path11to22len1 && path11to32len1) || (path12to22len1 && path12to32len1) || (path13to22len1 && path13to32len1) || (path21to22len1 && path21to32len1) || (path22to23len1 && path23to32len1) || (path22to31len1 && path31to32len1) || (path22to33len1 && path32to33len1) in
+	let path22to33len2 = path22to33len1 || (path11to22len1 && path11to33len1) || (path12to22len1 && path12to33len1) || (path13to22len1 && path13to33len1) || (path21to22len1 && path21to33len1) || (path22to23len1 && path23to33len1) || (path22to31len1 && path31to33len1) || (path22to32len1 && path32to33len1) in
+	let path23to31len2 = path23to31len1 || (path11to23len1 && path11to31len1) || (path12to23len1 && path12to31len1) || (path13to23len1 && path13to31len1) || (path21to23len1 && path21to31len1) || (path22to23len1 && path22to31len1) || (path23to32len1 && path31to32len1) || (path23to33len1 && path31to33len1) in
+	let path23to32len2 = path23to32len1 || (path11to23len1 && path11to32len1) || (path12to23len1 && path12to32len1) || (path13to23len1 && path13to32len1) || (path21to23len1 && path21to32len1) || (path22to23len1 && path22to32len1) || (path23to31len1 && path31to32len1) || (path23to33len1 && path32to33len1) in
+	let path23to33len2 = path23to33len1 || (path11to23len1 && path11to33len1) || (path12to23len1 && path12to33len1) || (path13to23len1 && path13to33len1) || (path21to23len1 && path21to33len1) || (path22to23len1 && path22to33len1) || (path23to31len1 && path31to33len1) || (path23to32len1 && path32to33len1) in
+	let path31to32len2 = path31to32len1 || (path11to31len1 && path11to32len1) || (path12to31len1 && path12to32len1) || (path13to31len1 && path13to32len1) || (path21to31len1 && path21to32len1) || (path22to31len1 && path22to32len1) || (path23to31len1 && path23to32len1) || (path31to33len1 && path32to33len1) in
+	let path31to33len2 = path31to33len1 || (path11to31len1 && path11to33len1) || (path12to31len1 && path12to33len1) || (path13to31len1 && path13to33len1) || (path21to31len1 && path21to33len1) || (path22to31len1 && path22to33len1) || (path23to31len1 && path23to33len1) || (path31to32len1 && path32to33len1) in
+	let path32to33len2 = path32to33len1 || (path11to32len1 && path11to33len1) || (path12to32len1 && path12to33len1) || (path13to32len1 && path13to33len1) || (path21to32len1 && path21to33len1) || (path22to32len1 && path22to33len1) || (path23to32len1 && path23to33len1) || (path31to32len1 && path31to33len1) in
+	
+	(path11to12len2, (path11to13len2, (path11to21len2, (path11to22len2, (path11to23len2, (path11to31len2, (path11to32len2, (path11to33len2, (path12to13len2, (path12to21len2, (path12to22len2, (path12to23len2, (path12to31len2, (path12to32len2, (path12to33len2, (path13to21len2, (path13to22len2, (path13to23len2, (path13to31len2, (path13to32len2, (path13to33len2, (path21to22len2, (path21to23len2, (path21to31len2, (path21to32len2, (path21to33len2, (path22to23len2, (path22to31len2, (path22to32len2, (path22to33len2, (path23to31len2, (path23to32len2, (path23to33len2, (path31to32len2, (path31to33len2, path32to33len2)))))))))))))))))))))))))))))))))))
+}
+
+path_length_less_equal_2()
